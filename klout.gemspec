@@ -5,7 +5,7 @@ require File.expand_path('lib/klout/version')
 
 Gem::Specification.new do |s|
   s.add_runtime_dependency('hashie', '~> 3.0.0')
-  s.add_runtime_dependency('httparty')
+  s.add_runtime_dependency('mechanize')
   s.add_runtime_dependency('json')
   s.add_development_dependency('fakeweb', '>= 1.3.0') 
   s.add_development_dependency('guard-rspec', '>= 0.7.0')
