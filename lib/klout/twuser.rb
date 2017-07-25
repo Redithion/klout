@@ -41,4 +41,3 @@ module Klout
     end
   end
 end
-end
