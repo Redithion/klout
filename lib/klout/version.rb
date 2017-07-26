@@ -1,3 +1,3 @@
 module Klout
-  VERSION = "3.0.3" unless defined?(Klout::VERSION)
+  VERSION = "3.1.0" unless defined?(Klout::VERSION)
 end
