@@ -102,20 +102,8 @@ module Klout
       end
 
       def handle_response(response) # :nodoc:
-        case response.code
-        when 400
-          raise BadRequest.new response.parsed_response
-        when 401
-          raise Unauthorized.new
-        when 404
-          raise NotFound.new
-        when 400...500
-          raise ClientError.new response.parsed_response
-        when 500...600
-          raise ServerError.new
-        else
-          JSON.parse response.body
-        end
+        #TODO: Better response handle
+        JSON.parse response.body
       end
 
       def get_absolute_url(parent_url, link_url)
